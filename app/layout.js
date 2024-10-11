@@ -7,7 +7,7 @@ import "./globals.css";
 import { ThemeProvider } from "@mui/material";
 import theme from "../theme";
 import logo from "../public/assets/img/logo/logo.png";
-
+import { Analytics } from "@vercel/analytics";
 export default function RootLayout({ children }) {
   return (
     <ThemeProvider theme={theme}>
@@ -47,6 +47,7 @@ export default function RootLayout({ children }) {
           </head>{" "}
           <body className={inter.className}>{children}</body>
         </html>
+        <Analytics />
       </ClerkProvider>
     </ThemeProvider>
   );
