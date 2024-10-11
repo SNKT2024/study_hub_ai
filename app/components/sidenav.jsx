@@ -23,7 +23,7 @@ import RouteIcon from "@mui/icons-material/Route";
 
 import { Box, Button, Typography, useMediaQuery } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logo from "../../../studyhubai/public/assets/img/logo/logo.png";
+
 import Image from "next/image";
 
 import { useRouter } from "next/navigation";
@@ -171,7 +171,7 @@ export default function Sidenav({}) {
         <DrawerHeader sx={{ alignItems: "center", justifyContent: "center" }}>
           <List>
             <Image
-              src={logo}
+              src={"/assets/img/logo/logo.png"}
               alt="logo"
               width={50}
               height={50}

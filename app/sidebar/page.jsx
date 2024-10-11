@@ -23,7 +23,7 @@ import RouteIcon from "@mui/icons-material/Route";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import { ListSubheader, Typography } from "@mui/material";
 import { UserProfile } from "@clerk/nextjs";
-import logo from "../../assets/img/logo/logo.png";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -156,7 +156,7 @@ export default function MiniDrawer() {
       <DrawerHeader sx={{ alignItems: "center", justifyContent: "center" }}>
         <List>
           <Image
-            src={logo}
+            src={"/assets/img/logo/logo.png"}
             alt="logo"
             width={50}
             height={50}

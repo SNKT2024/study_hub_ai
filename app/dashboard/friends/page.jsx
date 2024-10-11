@@ -7,7 +7,6 @@ import NotesIcon from "@mui/icons-material/Notes";
 import RouteIcon from "@mui/icons-material/Route";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import logo from "../../../public/assets/img/logo/logo.png";
 
 const Friends_Page = () => {
   const handleItemClick = (path) => {
@@ -51,7 +50,12 @@ const Friends_Page = () => {
       height={"100%"}
       flexDirection={"column"}
     >
-      <Image src={logo} alt="logo" width={150} height={150} />
+      <Image
+        src={"/assets/img/logo/logo.png"}
+        alt="logo"
+        width={150}
+        height={150}
+      />
 
       <Typography variant="h4" mt={2} textAlign={"center"} color="secondary">
         IN DEVELOPMENT

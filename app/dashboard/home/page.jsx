@@ -52,7 +52,12 @@ const Home_Page = () => {
       flexDirection={"column"}
     >
       <Stack spacing={3} alignItems={"center"} justifyContent={"center"} p={3}>
-        <Image src={logo} alt="logo" width={150} height={150} />
+        <Image
+          src={"/assets/img/logo/logo.png"}
+          alt="logo"
+          width={150}
+          height={150}
+        />
         <Typography
           variant="h3"
           color={theme.palette.secondary.main}
