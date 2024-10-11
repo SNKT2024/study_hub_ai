@@ -44,6 +44,7 @@ export default function RootLayout({ children }) {
           <head>
             <title>StudyHub</title>
             <meta name="Created using Next Js" content="Description" />
+            <link rel="icon" href="/favicon.ico" sizes="any" />
           </head>{" "}
           <body className={inter.className}>{children}</body>
         </html>
