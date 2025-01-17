@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
 import { ThemeProvider } from "@mui/material";
 import theme from "../theme";
-import logo from "../public/assets/img/logo/logo.png";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }) {
   return (
@@ -46,7 +46,10 @@ export default function RootLayout({ children }) {
             <meta name="Created using Next Js" content="Description" />
             <link rel="icon" href="/favicon.ico" sizes="any" />
           </head>{" "}
-          <body className={inter.className}>{children}</body>
+          <body className={inter.className}>
+            {children}
+            <Analytics />
+          </body>
         </html>
       </ClerkProvider>
     </ThemeProvider>
